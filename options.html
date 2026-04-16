@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="optionsPageTitle">Tabmission Options</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/tbm_options.css">
+</head>
+<body>
+  <div id="tbm_options_wrap">
+    <h1 id="tbm_options_title" data-i18n="optionsHeading">Tabmission Settings</h1>
+    <div class="tbm_settings_shell">
+      <aside class="tbm_side_tabs" data-i18n-aria-label="optionsSideTabsAriaLabel" aria-label="Settings sections">
+        <button
+          id="tbm_tab_button_control"
+          class="tbm_side_tab is-active"
+          type="button"
+          data-panel="control"
+        >
+          <span class="tbm_side_tab_text" data-i18n="sideTabControl">タブ制御</span>
+        </button>
+
+        <button
+          id="tbm_tab_button_search"
+          class="tbm_side_tab"
+          type="button"
+          data-panel="search"
+        >
+          <span class="tbm_side_tab_text" data-i18n="sideTabSearch">タブ検索</span>
+        </button>
+
+        <button
+          id="tbm_tab_button_link_selector"
+          class="tbm_side_tab"
+          type="button"
+          data-panel="link_selector"
+        >
+          <span class="tbm_side_tab_text" data-i18n="sideTabLinkSelector">リンク選択</span>
+        </button>
+
+        <button
+          id="tbm_tab_button_sts"
+          class="tbm_side_tab"
+          type="button"
+          data-panel="sts"
+        >
+          <span class="tbm_side_tab_text" data-i18n="sideTabSts">検索欄フォーカス</span>
+        </button>
+
+        <button
+          id="tbm_tab_button_pagejump"
+          class="tbm_side_tab"
+          type="button"
+          data-panel="pagejump"
+        >
+          <span class="tbm_side_tab_text" data-i18n="sideTabPageJump">ページジャンプ</span>
+        </button>
+
+        <button
+          id="tbm_tab_button_about"
+          class="tbm_side_tab"
+          type="button"
+          data-panel="about"
+        >
+          <span class="tbm_side_tab_text" data-i18n="sideTabAbout">about</span>
+        </button>
+
+      </aside>
+
+      <main class="tbm_panel_host">
+        <section
+          id="tbm_panel_control"
+          class="tbm_settings_panel is-active"
+          data-panel="control"
+        >
+          <div class="tbm_panel_main">
+            <div class="tbm_panel_header">
+              <h2 class="tbm_panel_title"><span data-i18n="controlPanelTitle"></span></h2>
+              <p class="tbm_panel_desc">
+                <span data-i18n="controlPanelDesc"></span>
+              </p>
+            </div>
+
+            <div class="tbm_option_row tbm_enable_row">
+              <label class="tbm_checkbox_label">
+                <input id="tbm_enable_tab_control" type="checkbox">
+                <span data-i18n="controlEnable"></span>
+              </label>
+            </div>
+
+            <div id="tbm_group_control" class="tbm_option_group">
+              <div class="tbm_option_row">
+                <div class="tbm_option_label" id="tbm_label_new_tab_placement">
+                  <span data-i18n="labelNewTabPlacement"></span>
+                </div>
+                <div class="tbm_option_control">
+                  <select id="tbm_new_tab_placement">
+                    <option value="default" data-i18n="optionChromeDefault"></option>
+                    <option value="first" data-i18n="optionFirst"></option>
+                    <option value="left" data-i18n="optionLeftOfCurrentTab"></option>
+                    <option value="right" data-i18n="optionRightOfCurrentTab"></option>
+                    <option value="last" data-i18n="optionLast"></option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label" id="tbm_label_close_activation">
+                  <span data-i18n="labelCloseActivation"></span>
+                </div>
+                <div class="tbm_option_control">
+                  <select id="tbm_close_activation">
+                    <option value="default" data-i18n="optionChromeDefault"></option>
+                    <option value="last_used" data-i18n="optionActivateLastUsedTab"></option>
+                    <option value="left" data-i18n="optionActivateLeftTab"></option>
+                    <option value="right" data-i18n="optionActivateRightTab"></option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label" id="tbm_label_new_tab_open_mode">
+                  <span data-i18n="labelNewTabOpenMode"></span>
+                </div>
+                <div class="tbm_option_control">
+                  <select id="tbm_new_tab_open_mode">
+                    <option value="default" data-i18n="optionChromeDefault"></option>
+                    <option value="foreground" data-i18n="optionForeground"></option>
+                    <option value="background" data-i18n="optionBackground"></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="tbm_section_hr">
+
+          <div class="tbm_panel_actions">
+            <span class="tbm_save_status" aria-live="polite"></span>
+            <button type="button" class="tbm_secondary_button tbm_reset_button"><span data-i18n="buttonReset"></span></button>
+            <button type="button" class="tbm_save_button"><span data-i18n="buttonSaveSettings"></span></button>
+          </div>
+        </section>
+
+        <section
+          id="tbm_panel_search"
+          class="tbm_settings_panel"
+          data-panel="search"
+          hidden
+        >
+          <div class="tbm_panel_main">
+            <div class="tbm_panel_header">
+              <h2 class="tbm_panel_title"><span data-i18n="searchPanelTitle"></span></h2>
+              <p class="tbm_panel_desc">
+                <span data-i18n="searchPanelDesc"></span>
+              </p>
+            </div>
+
+            <div class="tbm_setting_group" id="tbm_group_search">
+              <div class="tbm_option_row">
+                <div class="tbm_option_label"><span data-i18n="searchEnableLabel"></span></div>
+                <div class="tbm_option_control">
+                  <label class="tbm_checkbox_label">
+                    <input id="tbm_enable_tab_search" type="checkbox">
+                    <span data-i18n="searchEnableCheckbox"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label" id="tbm_label_launcher_key"><span data-i18n="searchLauncherKeyLabel"></span></div>
+                <div class="tbm_option_control">
+                  <div class="tbm_modifier_group">
+                    <button id="tbm_launcher_ctrl" type="button" class="tbm_modifier_button"><span data-i18n="keyNameCtrl"></span></button>
+                    <button id="tbm_launcher_alt" type="button" class="tbm_modifier_button"><span data-i18n="keyNameAlt"></span></button>
+                    <button id="tbm_launcher_shift" type="button" class="tbm_modifier_button"><span data-i18n="keyNameShift"></span></button>
+                  </div>
+                  <div class="tbm_launcher_key_row">
+                    <input
+                      id="tbm_launcher_key"
+                      type="text"
+                      maxlength="12"
+                      data-i18n-placeholder="commonKeyPlaceholder"
+                      placeholder="クリックしてキー押下"
+                      autocomplete="off"
+                      spellcheck="false"
+                      inputmode="none"
+                      readonly
+                    >
+                    <span id="tbm_launcher_preview" class="tbm_launcher_preview"></span>
+                  </div>
+
+                  <div class="tbm_note">
+                    <span data-i18n="searchKeyNote1"></span><br>
+                    <span data-i18n="searchKeyNote2"></span><br>
+                    <span data-i18n="searchKeyNote3"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="tbm_section_hr">
+
+          <div class="tbm_panel_actions">
+            <span class="tbm_save_status" aria-live="polite"></span>
+            <button type="button" class="tbm_secondary_button tbm_reset_button"><span data-i18n="buttonReset"></span></button>
+            <button type="button" class="tbm_save_button"><span data-i18n="buttonSaveSettings"></span></button>
+          </div>
+        </section>
+
+        <section
+          id="tbm_panel_link_selector"
+          class="tbm_settings_panel"
+          data-panel="link_selector"
+          hidden
+        >
+          <div class="tbm_panel_main">
+            <div class="tbm_panel_header">
+              <h2 class="tbm_panel_title"><span data-i18n="linkPanelTitle"></span></h2>
+              <p class="tbm_panel_desc">
+                <span data-i18n="linkPanelDesc"></span>
+              </p>
+            </div>
+
+            <div class="tbm_setting_group" id="tbm_group_link_selector">
+              <div class="tbm_option_row">
+                <div class="tbm_option_label"><span data-i18n="linkEnableLabel"></span></div>
+                <div class="tbm_option_control">
+                  <label class="tbm_checkbox_label">
+                    <input id="tbm_enable_link_batch_open" type="checkbox">
+                    <span data-i18n="linkEnableCheckbox"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label"><span data-i18n="linkLaunchKeyLabel"></span></div>
+                <div class="tbm_option_control">
+                  <div class="tbm_modifier_group">
+                    <button id="tbm_link_batch_ctrl" type="button" class="tbm_modifier_button"><span data-i18n="keyNameCtrl"></span></button>
+                    <button id="tbm_link_batch_alt" type="button" class="tbm_modifier_button"><span data-i18n="keyNameAlt"></span></button>
+                    <button id="tbm_link_batch_shift" type="button" class="tbm_modifier_button"><span data-i18n="keyNameShift"></span></button>
+                  </div>
+
+                  <div class="tbm_launcher_key_row">
+                    <input
+                      id="tbm_link_batch_key"
+                      type="text"
+                      maxlength="12"
+                      data-i18n-placeholder="commonKeyPlaceholder"
+                      placeholder="クリックしてキー押下"
+                      autocomplete="off"
+                      spellcheck="false"
+                      inputmode="none"
+                      readonly
+                    >
+                    <span id="tbm_link_batch_preview" class="tbm_launcher_preview"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label">
+                  <span data-i18n="linkOverlayLabel"></span>
+                  <div class="tbm_option_sub_label">
+                    <span data-i18n="linkOverlaySubLabel"></span>
+                  </div>
+                </div>
+                <div class="tbm_option_control">
+                  <div class="tbm_link_batch_overlay_ui">
+                    <div class="tbm_link_batch_color_line">
+                      <span class="tbm_link_batch_inline_label"><span data-i18n="linkColorLabel"></span></span>
+                      <input
+                        id="tbm_link_batch_overlay_color_picker"
+                        class="tbm_link_batch_color_picker"
+                        type="color"
+                        value="#000000"
+                      >
+                      <input
+                        id="tbm_link_batch_overlay_color"
+                        type="text"
+                        placeholder="#000000"
+                        autocomplete="off"
+                        spellcheck="false"
+                      >
+                    </div>
+
+                    <div class="tbm_link_batch_opacity_line">
+                      <span class="tbm_link_batch_inline_label"><span data-i18n="linkOpacityLabel"></span></span>
+                      <input
+                        id="tbm_link_batch_overlay_opacity_range"
+                        class="tbm_link_batch_range"
+                        type="range"
+                        min="0"
+                        max="100"
+                        step="1"
+                        value="55"
+                      >
+                      <input
+                        id="tbm_link_batch_overlay_opacity"
+                        class="tbm_link_batch_opacity_input"
+                        type="text"
+                        placeholder="0.55"
+                        autocomplete="off"
+                        spellcheck="false"
+                      >
+                      <span class="tbm_link_batch_inline_suffix"><span data-i18n="linkOpacityRangeText"></span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label">
+                  <span data-i18n="linkBorderColorLabel"></span>
+                    <div class="tbm_option_sub_label">
+                      <span data-i18n="linkBorderColorSubLabel"></span>
+                    </div>
+                </div>
+                <div class="tbm_option_control">
+                  <div class="tbm_link_batch_color_line">
+                    <input
+                      id="tbm_link_batch_border_color_picker"
+                      class="tbm_link_batch_color_picker"
+                      type="color"
+                      value="#ff4db8"
+                    >
+                    <input
+                      id="tbm_link_batch_border_color"
+                      type="text"
+                      placeholder="#ff4db8"
+                      autocomplete="off"
+                      spellcheck="false"
+                    >
+                    <span class="tbm_link_batch_color_preview tbm_link_batch_color_preview_border"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label">
+                    <span data-i18n="linkCheckedColorLabel"></span>
+                      <div class="tbm_option_sub_label">
+                        <span data-i18n="linkCheckedColorSubLabel"></span>
+                      </div>
+                </div>
+                <div class="tbm_option_control">
+                  <div class="tbm_link_batch_color_line">
+                    <input
+                      id="tbm_link_batch_checked_color_picker"
+                      class="tbm_link_batch_color_picker"
+                      type="color"
+                      value="#00e676"
+                    >
+                    <input
+                      id="tbm_link_batch_checked_color"
+                      type="text"
+                      placeholder="#00e676"
+                      autocomplete="off"
+                      spellcheck="false"
+                    >
+                    <span class="tbm_link_batch_color_preview tbm_link_batch_color_preview_checked"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label">
+                  <span data-i18n="linkCheckboxPositionLabel"></span>
+                </div>
+
+                <div class="tbm_option_control">
+                   <select id="tbm_link_batch_checkbox_position">
+                     <option value="top_right" data-i18n="linkCheckboxTopRight">右上</option>
+                     <option value="top_left" data-i18n="linkCheckboxTopLeft">左上</option>
+                     <option value="bottom_right" data-i18n="linkCheckboxBottomRight">右下</option>
+                     <option value="bottom_left" data-i18n="linkCheckboxBottomLeft">左下</option>
+                   </select>
+                  <div class="tbm_link_batch_note">
+                     <span data-i18n="linkCheckboxPositionNote"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label">
+                   <span data-i18n="linkMinSizeLabel"></span>
+                </div>
+
+                <div class="tbm_option_control">
+                  <div class="tbm_link_batch_size_row">
+                    <div class="tbm_link_batch_size_item">
+                      <span class="tbm_link_batch_inline_label"><span data-i18n="linkWidthLabel"></span></span>
+                      <input
+                        id="tbm_link_batch_min_width"
+                        type="number"
+                        min="0"
+                      >
+                    </div>
+
+                    <div class="tbm_link_batch_size_item">
+                      <span class="tbm_link_batch_inline_label"><span data-i18n="linkHeightLabel"></span></span>
+                      <input
+                        id="tbm_link_batch_min_height"
+                        type="number"
+                        min="0"
+                      >
+                    </div>
+                  </div>
+
+                  <div class="tbm_link_batch_note">
+                      <span data-i18n="linkMinSizeNote1"></span><br>
+                      <span data-i18n="linkMinSizeNote2"></span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <hr class="tbm_section_hr">
+
+          <div class="tbm_panel_actions">
+            <span class="tbm_save_status" aria-live="polite"></span>
+            <button type="button" class="tbm_secondary_button tbm_reset_button"><span data-i18n="buttonReset"></span></button>
+            <button type="button" class="tbm_save_button"><span data-i18n="buttonSaveSettings"></span></button>
+          </div>
+        </section>
+
+        <section
+          id="tbm_panel_sts"
+          class="tbm_settings_panel"
+          data-panel="sts"
+          hidden
+        >
+          <div class="tbm_panel_main">
+            <div class="tbm_panel_header">
+              <h2 class="tbm_panel_title"><span data-i18n="stsPanelTitle"></span></h2>
+              <p class="tbm_panel_desc">
+                 <span data-i18n="stsPanelDesc"></span>
+              </p>
+            </div>
+
+            <div class="tbm_option_row tbm_enable_row">
+              <label class="tbm_checkbox_label">
+                <input id="tbm_enable_slash_to_search" type="checkbox">
+                <span data-i18n="stsEnable"></span>
+              </label>
+            </div>
+
+            <div id="tbm_group_sts" class="tbm_option_group">
+              <div class="tbm_option_row">
+                <div class="tbm_option_label">
+                <span data-i18n="stsFocusKeyLabel"></span>
+                <div class="tbm_option_sub_label"><span data-i18n="stsFocusKeySubLabel"></span></div>
+                </div>
+                <div class="tbm_option_control">
+                  <div class="tbm_modifier_group">
+                    <button id="tbm_sts_ctrl" type="button" class="tbm_modifier_button"><span data-i18n="keyNameCtrl"></span></button>
+                    <button id="tbm_sts_alt" type="button" class="tbm_modifier_button"><span data-i18n="keyNameAlt"></span></button>
+                    <button id="tbm_sts_shift" type="button" class="tbm_modifier_button"><span data-i18n="keyNameShift"></span></button>
+                  </div>
+                  <div class="tbm_launcher_key_row">
+                    <input
+                      id="tbm_sts_key"
+                      type="text"
+                      maxlength="12"
+                      data-i18n-placeholder="commonKeyPlaceholder"
+                      placeholder="クリックしてキー押下"
+                      autocomplete="off"
+                      spellcheck="false"
+                      inputmode="none"
+                      readonly
+                    >
+                    <span id="tbm_sts_preview" class="tbm_launcher_preview"></span>
+                  </div>
+
+                  <div class="tbm_note">
+                      <span data-i18n="stsNote1"></span><br>
+                      <span data-i18n="stsNote2"></span><br>
+                      ※ <span data-i18n="stsNote3"></span><br>
+                      <span data-i18n="stsNote4"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tbm_option_row tbm_sts_site_settings_row">
+                <div class="tbm_option_label"><span data-i18n="stsSiteSettingsLabel"></span></div>
+                <div class="tbm_option_control">
+                  <div class="tbm_sts_site_order_block">
+                    <div class="tbm_sts_site_order_title"><span data-i18n="stsSiteOrderTitle"></span></div>
+
+
+                    <div class="tbm_sts_site_add_row">
+                      <input
+                        id="tbm_sts_site_name_input"
+                        class="tbm_sts_site_name_input"
+                        type="text"
+                        autocomplete="off"
+                        spellcheck="false"
+                        data-i18n-placeholder="stsSiteNamePlaceholder"
+                        placeholder="サイト名（任意）"
+                      >
+
+                      <input
+                        id="tbm_sts_site_host_input"
+                        class="tbm_sts_site_host_input"
+                        type="text"
+                        autocomplete="off"
+                        spellcheck="false"
+                        
+                        placeholder=""
+                      >
+
+                      <input
+                        id="tbm_sts_site_order_input"
+                        class="tbm_sts_site_order_input"
+                        type="number"
+                        min="1"
+                        step="1"
+                        inputmode="numeric"
+                        data-i18n-placeholder="stsSiteOrderPlaceholder"
+                        placeholder="2"
+                      >
+
+                      <button
+                        id="tbm_sts_site_add_button"
+                        type="button"
+                        class="tbm_secondary_button"
+                      >
+                        <span data-i18n="stsSiteAddButton"></span>
+                      </button>
+                    </div>
+
+                    <div class="tbm_note">
+                      <span data-i18n="stsSiteOrderHint"></span>
+                    </div>
+                    <div
+                      id="tbm_sts_site_list"
+                      class="tbm_sts_site_list"
+                      aria-live="polite"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="tbm_section_hr">
+
+          <div class="tbm_panel_actions">
+            <span class="tbm_save_status" aria-live="polite"></span>
+            <button type="button" class="tbm_secondary_button tbm_reset_button"><span data-i18n="buttonReset"></span></button>
+            <button type="button" class="tbm_save_button"><span data-i18n="buttonSaveSettings"></span></button>
+          </div>
+        </section>
+
+        <section
+          id="tbm_panel_pagejump"
+          class="tbm_settings_panel"
+          data-panel="pagejump"
+          hidden
+        >
+          <div class="tbm_panel_main">
+            <div class="tbm_panel_header">
+              <h2 class="tbm_panel_title"><span data-i18n="pjPanelTitle"></span></h2>
+              <p class="tbm_panel_desc">
+                 <span data-i18n="pjPanelDesc"></span>
+              </p>
+            </div>
+
+            <div class="tbm_option_row tbm_enable_row">
+              <label class="tbm_checkbox_label">
+                <input id="tbm_enable_page_jump" type="checkbox">
+                <span data-i18n="pjEnable"></span>
+              </label>
+            </div>
+
+            <div class="tbm_option_row">
+              <div class="tbm_option_label"></div>
+              <div class="tbm_option_control">
+                <div class="tbm_note">
+                  ※ <span data-i18n="pjConflictNote"></span><br>
+                  <span data-i18n="pjConflictNote2"></span><br>
+                  ※ <span data-i18n="pjConflictNote3"></span>
+                </div>
+              </div>
+            </div>
+
+<div id="tbm_group_pagejump" class="tbm_option_group">
+
+  <!-- Google専用 -->
+  <div class="tbm_option_row tbm_pj_google_section_row">
+    <div class="tbm_option_label"><span data-i18n="pjGoogleOnly"></span></div>
+    <div class="tbm_option_control">
+      <div class="tbm_pj_google_card">
+        <label class="tbm_checkbox_label">
+          <input id="tbm_pj_google_enable" type="checkbox">
+          <span data-i18n="pjGoogleEnable"></span>
+        </label>
+
+        <div class="tbm_note tbm_pj_google_priority_note">
+          <span data-i18n="pjGooglePriority"></span>
+        </div>
+
+        <div class="tbm_pj_google_key_block">
+          <div class="tbm_pj_google_key_label"><span data-i18n="pjGoogleBackKey"></span></div>
+
+          <div class="tbm_pj_google_key_control">
+            <div class="tbm_modifier_group">
+              <button id="tbm_google_pj_back_ctrl" type="button" class="tbm_modifier_button"><span data-i18n="keyNameCtrl"></span></button>
+              <button id="tbm_google_pj_back_alt" type="button" class="tbm_modifier_button"><span data-i18n="keyNameAlt"></span></button>
+              <button id="tbm_google_pj_back_shift" type="button" class="tbm_modifier_button"><span data-i18n="keyNameShift"></span></button>
+            </div>
+
+            <div class="tbm_launcher_key_row">
+              <input
+                id="tbm_google_pj_back_key"
+                type="text"
+                maxlength="12"
+                data-i18n-placeholder="commonKeyPlaceholder"
+                placeholder="クリックしてキー押下"
+                autocomplete="off"
+                spellcheck="false"
+                inputmode="none"
+                readonly
+              >
+              <button id="tbm_google_pj_back_clear" type="button" class="tbm_secondary_button"><span data-i18n="commonClear"></span></button>
+              <span id="tbm_google_pj_back_preview" class="tbm_launcher_preview"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tbm_pj_google_key_block">
+          <div class="tbm_pj_google_key_label"><span data-i18n="pjGoogleForwardKey"></span></div>
+
+          <div class="tbm_pj_google_key_control">
+            <div class="tbm_modifier_group">
+              <button id="tbm_google_pj_ctrl" type="button" class="tbm_modifier_button"><span data-i18n="keyNameCtrl"></span></button>
+              <button id="tbm_google_pj_alt" type="button" class="tbm_modifier_button"><span data-i18n="keyNameAlt"></span></button>
+              <button id="tbm_google_pj_shift" type="button" class="tbm_modifier_button"><span data-i18n="keyNameShift"></span></button>
+            </div>
+
+            <div class="tbm_launcher_key_row">
+              <input
+                id="tbm_google_pj_key"
+                type="text"
+                maxlength="12"
+                data-i18n-placeholder="commonKeyPlaceholder"
+                placeholder="クリックしてキー押下"
+                autocomplete="off"
+                spellcheck="false"
+                inputmode="none"
+                readonly
+              >
+              <button id="tbm_google_pj_clear" type="button" class="tbm_secondary_button"><span data-i18n="commonClear"></span></button>
+              <span id="tbm_google_pj_preview" class="tbm_launcher_preview"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tbm_pj_google_mouse_group">
+          <label class="tbm_checkbox_label">
+            <input id="tbm_google_pj_mouse_back" type="checkbox">
+            <span data-i18n="pjMouseBack"></span>
+          </label>
+
+          <label class="tbm_checkbox_label">
+            <input id="tbm_google_pj_mouse_forward" type="checkbox">
+            <span data-i18n="pjMouseForward"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tbm_pj_general_section_intro">
+    <div class="tbm_pj_general_section_divider"></div>
+    <div class="tbm_pj_general_section_title"><span data-i18n="pjSectionGeneral"></span></div>
+  </div>
+
+  <!-- 設定モード -->
+  <div class="tbm_option_row">
+    <div class="tbm_option_label"><span data-i18n="pjModeLabel"></span></div>
+    <div class="tbm_option_control">
+      <div class="tbm_pj_mode_group">
+        <label><input type="radio" name="tbm_pj_mode" value="auto" checked> <span data-i18n="pjModeAuto"></span></label>
+        <label><input type="radio" name="tbm_pj_mode" value="manual"> <span data-i18n="pjModeManual"></span></label>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 自動解析 -->
+  <div id="tbm_pj_auto_group" class="tbm_option_group">
+    <div class="tbm_option_row tbm_pj_auto_row">
+      <div class="tbm_option_label"><span data-i18n="pjAutoSectionLabel"></span></div>
+      <div class="tbm_option_control">
+        <div class="tbm_pj_google_card">
+
+          <div class="tbm_pj_google_key_block">
+            <div class="tbm_pj_google_key_label"><span data-i18n="pjUrl1"></span></div>
+            <input id="tbm_pj_url1" type="text">
+          </div>
+
+          <div class="tbm_pj_google_key_block">
+            <div class="tbm_pj_google_key_label"><span data-i18n="pjUrl2"></span></div>
+            <input id="tbm_pj_url2" type="text">
+          </div>
+
+          <div class="tbm_pj_google_key_block">
+            <div class="tbm_pj_google_key_label"><span data-i18n="pjUrl3"></span></div>
+            <input id="tbm_pj_url3" type="text">
+          </div>
+
+          <div class="tbm_pj_google_key_block">
+            <button id="tbm_pj_analyze" type="button" class="tbm_secondary_button"><span data-i18n="pjAnalyzeButton2"></span></button>
+            <span id="tbm_pj_analysis_text"></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 手動設定 -->
+  <div id="tbm_pj_manual_group" class="tbm_option_group">
+
+    <div class="tbm_option_row">
+      <div class="tbm_option_label"><span data-i18n="pjManualName"></span></div>
+      <div class="tbm_option_control">
+        <input id="tbm_pj_site_name" type="text">
+      </div>
+    </div>
+
+    <div class="tbm_option_row">
+      <div class="tbm_option_label"><span data-i18n="pjManualHost"></span></div>
+      <div class="tbm_option_control">
+        <input id="tbm_pj_host" type="text">
+      </div>
+    </div>
+
+    <div class="tbm_option_row">
+      <div class="tbm_option_label"><span data-i18n="pjManualType"></span></div>
+      <div class="tbm_option_control">
+        <label><input type="radio" name="tbm_pj_type" value="query"> <span data-i18n="pjModeQuery"></span></label>
+        <label><input type="radio" name="tbm_pj_type" value="path"> <span data-i18n="pjModePath"></span></label>
+        <label><input type="radio" name="tbm_pj_type" value="offset"> <span data-i18n="pjModeOffset"></span></label>
+      </div>
+    </div>
+
+    <div class="tbm_option_row">
+      <div class="tbm_option_label"><span data-i18n="pjManualPattern"></span></div>
+      <div class="tbm_option_control">
+        <input id="tbm_pj_pattern" type="text">
+      </div>
+    </div>
+
+    <div class="tbm_option_row">
+      <div class="tbm_option_label"><span data-i18n="pjManualStep"></span></div>
+      <div class="tbm_option_control">
+        <input id="tbm_pj_step" type="text">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- サンプル -->
+  <div class="tbm_option_row">
+    <div class="tbm_option_label"><span data-i18n="pjSampleLabel"></span></div>
+    <div class="tbm_option_control">
+      <div class="tbm_note">
+        <strong><span data-i18n="pjSampleTitle"></span></strong><br>
+        <span data-i18n="pjSampleBody"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- キー設定 -->
+  <div class="tbm_option_row">
+    <div class="tbm_option_label"><span data-i18n="pjKeySectionLabel"></span></div>
+    <div class="tbm_option_control">
+      <div class="tbm_pj_google_card">
+
+        <div class="tbm_pj_google_key_block">
+          <div class="tbm_pj_google_key_label"><span data-i18n="pjBackKey"></span></div>
+          <div class="tbm_pj_google_key_control">
+            <div class="tbm_modifier_group">
+              <button id="tbm_pj_back_ctrl" type="button" class="tbm_modifier_button"><span data-i18n="keyNameCtrl"></span></button>
+              <button id="tbm_pj_back_alt" type="button" class="tbm_modifier_button"><span data-i18n="keyNameAlt"></span></button>
+              <button id="tbm_pj_back_shift" type="button" class="tbm_modifier_button"><span data-i18n="keyNameShift"></span></button>
+            </div>
+
+            <div class="tbm_launcher_key_row">
+              <input
+                id="tbm_pj_back_key"
+                type="text"
+                maxlength="12"
+                data-i18n-placeholder="commonKeyPlaceholder"
+                placeholder="クリックしてキー押下"
+                autocomplete="off"
+                spellcheck="false"
+                inputmode="none"
+                readonly
+              >
+              <button
+                id="tbm_pj_back_clear"
+                type="button"
+                class="tbm_secondary_button"
+              >
+                <span data-i18n="commonClear"></span>
+              </button>
+              <span id="tbm_pj_back_preview" class="tbm_launcher_preview"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tbm_pj_google_key_block">
+          <div class="tbm_pj_google_key_label"><span data-i18n="pjForwardKey"></span></div>
+          <div class="tbm_pj_google_key_control">
+            <div class="tbm_modifier_group">
+              <button id="tbm_pj_ctrl" type="button" class="tbm_modifier_button"><span data-i18n="keyNameCtrl"></span></button>
+              <button id="tbm_pj_alt" type="button" class="tbm_modifier_button"><span data-i18n="keyNameAlt"></span></button>
+              <button id="tbm_pj_shift" type="button" class="tbm_modifier_button"><span data-i18n="keyNameShift"></span></button>
+            </div>
+
+            <div class="tbm_launcher_key_row">
+              <input
+                id="tbm_pj_key"
+                type="text"
+                maxlength="12"
+                data-i18n-placeholder="commonKeyPlaceholder"
+                placeholder="クリックしてキー押下"
+                autocomplete="off"
+                spellcheck="false"
+                inputmode="none"
+                readonly
+              >
+              <button
+                id="tbm_pj_clear"
+                type="button"
+                class="tbm_secondary_button"
+              >
+                <span data-i18n="commonClear"></span>
+              </button>
+              <span id="tbm_pj_preview" class="tbm_launcher_preview"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tbm_pj_google_mouse_group">
+          <label class="tbm_checkbox_label">
+            <input id="tbm_pj_mouse_back" type="checkbox">
+            <span data-i18n="pjMouseBack"></span>
+          </label>
+
+          <label class="tbm_checkbox_label">
+            <input id="tbm_pj_mouse_forward" type="checkbox">
+            <span data-i18n="pjMouseForward"></span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 設定済みサイト -->
+  <div class="tbm_option_row">
+    <div class="tbm_option_label"><span data-i18n="pjSavedSites"></span></div>
+    <div class="tbm_option_control">
+      <div id="tbm_pj_rule_list" class="tbm_sts_site_list"></div>
+    </div>
+  </div>
+
+</div>
+          </div>
+
+          <hr class="tbm_section_hr">
+
+          <div class="tbm_panel_actions">
+            <span class="tbm_save_status" aria-live="polite"></span>
+            <button type="button" class="tbm_secondary_button tbm_reset_button"><span data-i18n="buttonReset"></span></button>
+            <button type="button" class="tbm_save_button"><span data-i18n="buttonSaveSettings"></span></button>
+          </div>        
+        </section>
+
+        <section
+          id="tbm_panel_about"
+          class="tbm_settings_panel"
+          data-panel="about"
+          hidden
+        >
+          <div class="tbm_panel_main tbm_about_panel_main">
+            <div class="tbm_about_card">
+              <h2 class="tbm_about_title">Tabmission</h2>
+
+              <div class="tbm_about_grid">
+                <div class="tbm_about_meta">
+                  <div class="tbm_about_label"><span data-i18n="aboutVersionLabel"></span></div>
+                  <div id="tbm_about_version" class="tbm_about_value"></div>
+
+                  <div class="tbm_about_label"><span data-i18n="aboutAuthorLabel"></span></div>
+                  <div class="tbm_about_value">Wacallanaides</div>
+
+                  <div class="tbm_about_label"><span data-i18n="aboutThanksLabel"></span></div>
+                  <div class="tbm_about_value">Chat GPT Plus</div>
+                </div>
+
+                <div class="tbm_about_crest_wrap">
+                  <img
+                    id="tbm_about_crest"
+                    class="tbm_about_crest"
+                    data-i18n-alt="aboutCrestAlt"
+                    alt="Tabmission crest"
+                    src="crest.jpg"
+                  >
+                </div>
+              </div>
+
+              <div class="tbm_about_backup_block">
+                <h3 class="tbm_about_backup_title"><span data-i18n="aboutBackupTitle"></span></h3>
+
+                <div class="tbm_note">
+                    <span data-i18n="aboutBackupNote1"></span><br>
+                    <span data-i18n="aboutBackupNote2"></span><br>
+                    <span data-i18n="aboutBackupNote3"></span>
+                </div>
+
+                <textarea
+                  id="tbm_backup_textarea"
+                  class="tbm_backup_textarea"
+                  spellcheck="false"
+                  autocomplete="off"
+                ></textarea>
+
+                <div class="tbm_about_backup_actions">
+                  <button
+                    id="tbm_backup_export_button"
+                    type="button"
+                    class="tbm_secondary_button"
+                  >
+                    <span data-i18n="aboutBackupExport"></span>
+                  </button>
+                  <button
+                    id="tbm_backup_import_button"
+                    type="button"
+                    class="tbm_save_button"
+                  >
+                    <span data-i18n="aboutBackupImport"></span>
+                  </button>
+                </div>
+
+                <div id="tbm_backup_status" class="tbm_note tbm_backup_status"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="js/tbm_options.js"></script>
+</body>
+</html>
