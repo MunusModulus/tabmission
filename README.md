@@ -26,4 +26,4 @@ MIT
 
 ## Legal
 特定商取引法に基づく表記：
-https://github.com/あなたのID/リポジトリ名/blob/main/legal/tokushoho.md
+https://github.com/MunusModulus/tabmission/blob/main/legal/tokushoho.md
