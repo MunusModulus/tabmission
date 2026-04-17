@@ -51,7 +51,7 @@ Wacallanaides
 Support Email:
 munusmodulus+dev@gmail.com
 
-Stripe Registered Email:
+Stripe Registered Email:munusmodulus@gmail.com
 
 *Both email addresses belong to the same service operator.
 For inquiries, please contact the support email above.
