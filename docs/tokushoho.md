@@ -4,8 +4,14 @@
 （ハンドルネーム可）例：Wacallanaides
 
 ■ 連絡先  
-メールアドレス：munusmodulus+dev@gmail.com
-※お問い合わせはメールにてお願いいたします。
+問い合わせ用メール：
+munusmodulus+dev@gmail.com
+
+Stripe登録メール：
+munusmodulus@gmail.com
+
+※上記はいずれも当サービス運営者の連絡先です
+※お問い合わせはサポートメールへお願いします
 
 ■ 提供内容  
 Chrome拡張機能の開発および公開  
@@ -40,8 +46,15 @@ Google Chrome 最新版
 ■ Seller  
 Wacallanaides
 
-■ Contact  
-Email: munusmodulus+dev@gmail.com
+■ Contact
+
+Support Email:
+munusmodulus+dev@gmail.com
+
+Stripe Registered Email:
+
+*Both email addresses belong to the same service operator.
+For inquiries, please contact the support email above.
 
 ■ Description of Service  
 Development and distribution of Chrome extensions  
