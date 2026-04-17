@@ -26,4 +26,4 @@ MIT
 
 ## Legal
 特定商取引法に基づく表記：
-https://munusmodulus.github.io/tabmission/tokushoho.html
+https://munusmodulus.github.io/tabmission/docs/tokushoho.html
