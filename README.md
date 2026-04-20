@@ -11,13 +11,13 @@ Tabmission is a Chrome extension designed to improve browsing flow with fast tab
 
 ## Support
 
-Project page:
+Project page:  
 https://munusmodulus.github.io/tabmission/
 
-Repository:
+Repository:  
 https://github.com/MunusModulus/tabmission
 
-Contact:
+Contact:  
 munusmodulus+dev@gmail.com
 
 ## License
@@ -25,5 +25,5 @@ munusmodulus+dev@gmail.com
 MIT
 
 ## Legal
-特定商取引法に基づく表記：
+特定商取引法に基づく表記：  
 https://munusmodulus.github.io/tabmission/docs/tokushoho.html
