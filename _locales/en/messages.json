@@ -1,0 +1,607 @@
+{
+  "extName": {
+    "message": "Tabmission"
+  },
+  "extDescription": {
+    "message": "All-in-one extension for page jumping, search focusing, tab control, tab search, and batch link operations."
+  },
+  "cmdSwitchPreviousTab": {
+    "message": "Switch to previous tab"
+  },
+  "optionsPageTitle": {
+    "message": "Tabmission Settings"
+  },
+  "optionsHeading": {
+    "message": "Tabmission Settings"
+  },
+  "optionsBadgeTabBehavior": {
+    "message": "Tab Behavior"
+  },
+  "labelNewTabPlacement": {
+    "message": "New tab placement"
+  },
+  "labelCloseActivation": {
+    "message": "After closing current tab"
+  },
+  "labelNewTabOpenMode": {
+    "message": "New tab open mode"
+  },
+  "optionChromeDefault": {
+    "message": "Chrome default"
+  },
+  "optionFirst": {
+    "message": "First"
+  },
+  "optionLeftOfCurrentTab": {
+    "message": "Left of current tab"
+  },
+  "optionRightOfCurrentTab": {
+    "message": "Right of current tab"
+  },
+  "optionLast": {
+    "message": "Last"
+  },
+  "optionActivateLastUsedTab": {
+    "message": "Activate last used tab"
+  },
+  "optionActivateLeftTab": {
+    "message": "Activate left tab"
+  },
+  "optionActivateRightTab": {
+    "message": "Activate right tab"
+  },
+  "pjSectionGeneral": {
+    "message": "General Site Settings"
+  },
+  "pjAnalyzeButton": {
+    "message": "Analyze Page"
+  },
+  "pjNoRules": {
+    "message": "No saved site rules yet."
+  },
+  "pjEditingLabel": {
+    "message": "Editing: $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionForeground": {
+    "message": "Foreground"
+  },
+  "optionBackground": {
+    "message": "Background"
+  },
+  "pjPanelTitle": {
+    "message": "Page Jump"
+  },
+  "pjPanelDesc": {
+    "message": "Move to the next page with automatic analysis or manual settings."
+  },
+  "pjEnable": {
+    "message": "Enable Page Jump"
+  },
+  "pjConflictNote": {
+    "message": "Some keys may conflict with website shortcuts or browser operations."
+  },
+  "pjConflictNote2": {
+    "message": "If that happens, please change to another key."
+  },
+  "pjConflictNote3": {
+    "message": "Does not work while typing in input fields or while Tab Search is open."
+  },
+  "pjGoogleOnly": {
+    "message": "Google Only"
+  },
+  "pjGoogleEnable": {
+    "message": "Use dedicated jump on Google Search"
+  },
+  "pjGooglePriority": {
+    "message": "This takes priority over other rules."
+  },
+  "pjGoogleBackKey": {
+    "message": "Google Back Key"
+  },
+  "pjGoogleForwardKey": {
+    "message": "Google Forward Key"
+  },
+  "pjMouseBack": {
+    "message": "Use mouse back button for previous page"
+  },
+  "pjMouseForward": {
+    "message": "Use mouse forward button for next page"
+  },
+  "pjModeLabel": {
+    "message": "Setting Mode"
+  },
+  "pjModeAuto": {
+    "message": "Auto Analyze"
+  },
+  "pjModeManual": {
+    "message": "Manual"
+  },
+  "pjAutoSectionLabel": {
+    "message": "Page Analysis"
+  },
+  "pjUrl1": {
+    "message": "Page 1 URL"
+  },
+  "pjUrl2": {
+    "message": "Page 2 URL"
+  },
+  "pjUrl3": {
+    "message": "Page 3 URL"
+  },
+  "pjAnalyzeButton2": {
+    "message": "Analyze URL"
+  },
+  "pjManualName": {
+    "message": "Setting Name"
+  },
+  "pjManualHost": {
+    "message": "Target Site (host)"
+  },
+  "pjManualType": {
+    "message": "URL Type"
+  },
+  "pjManualPattern": {
+    "message": "Pattern"
+  },
+  "pjManualStep": {
+    "message": "Step"
+  },
+  "pjSampleLabel": {
+    "message": "Sample"
+  },
+  "pjSampleTitle": {
+    "message": "Manual Settings (Examples)"
+  },
+  "pjKeySectionLabel": {
+    "message": "Key Settings"
+  },
+  "pjBackKey": {
+    "message": "Previous Page Key"
+  },
+  "pjForwardKey": {
+    "message": "Next Page Key"
+  },
+  "pjSavedSites": {
+    "message": "Saved Sites"
+  },
+  "commonClear": {
+    "message": "Clear"
+  },
+  "pjSampleBody": {
+    "message": "Query: Google → host: google.com / pattern: start={n} / step: 10\nPath: Gizmodo → host: gizmodo.jp / pattern: /articles/{n} / step: 1\nOffset: GIGAZINE → host: gigazine.net / pattern: /P{n}/ / step: 20"
+  },
+  "searchPanelTitle": {
+    "message": "Tab Search"
+  },
+  "searchPanelDesc": {
+    "message": "Show the tab search overlay."
+  },
+  "searchEnableLabel": {
+    "message": "Enable"
+  },
+  "searchEnableCheckbox": {
+    "message": "Enable Tab Search"
+  },
+  "searchLauncherKeyLabel": {
+    "message": "Launch Key"
+  },
+  "searchKeyNote1": {
+    "message": "* Ctrl + Space and Alt + Space cannot be used. Other Space combinations are allowed."
+  },
+  "searchKeyNote2": {
+    "message": "* Some keys may conflict with website shortcuts or browser operations."
+  },
+  "searchKeyNote3": {
+    "message": "If that happens, please change to another key."
+  },
+  "commonKeyPlaceholder": {
+    "message": "Click and press a key"
+  },
+  "stsPanelTitle": {
+    "message": "Search Box Focus"
+  },
+  "stsPanelDesc": {
+    "message": "Focus the search box on the website and type immediately."
+  },
+  "stsEnable": {
+    "message": "Enable Search Box Focus"
+  },
+  "stsFocusKeyLabel": {
+    "message": "Focus Key"
+  },
+  "stsFocusKeySubLabel": {
+    "message": "* Common to all sites"
+  },
+  "stsNote1": {
+    "message": "Each time you press the configured key, the focus cycles through search box candidates on the page."
+  },
+  "stsNote2": {
+    "message": "If a site is hard to target, adjust the initial position in Site-specific Settings."
+  },
+  "stsNote3": {
+    "message": "Some keys may conflict with website shortcuts or browser operations."
+  },
+  "stsNote4": {
+    "message": "If that happens, please change to another key."
+  },
+  "stsSiteSettingsLabel": {
+    "message": "Site-specific Settings"
+  },
+  "stsSiteOrderTitle": {
+    "message": "Initial Focus Position by Site"
+  },
+  "stsSiteOrderNote1": {
+    "message": "Do not enter the full URL. Enter the host name without \"https://\" and anything after the first slash."
+  },
+  "stsSiteOrderExample": {
+    "message": "Example:"
+  },
+  "stsSiteOrderExampleLine1": {
+    "message": "If you want the second box on https://search.yahoo.co.jp/realtime/"
+  },
+  "stsSiteOrderExampleLine2": {
+    "message": "↓"
+  },
+  "stsSiteOrderExampleLine3": {
+    "message": "search.yahoo.co.jp ・ 2"
+  },
+  "stsSiteNamePlaceholder": {
+    "message": "Site name (optional)"
+  },
+  "stsSiteHostPlaceholder": {
+    "message": "search.yahoo.co.jp"
+  },
+  "stsSiteOrderPlaceholder": {
+    "message": "2"
+  },
+  "stsSiteAddButton": {
+    "message": "Add"
+  },
+  "stsSiteOrderHint": {
+    "message": "1 = first box, 2 = second box, 3 = third box"
+  },
+  "linkPanelTitle": {
+    "message": "Link Selector"
+  },
+  "linkPanelDesc": {
+    "message": "Select links on the page and open them in the background."
+  },
+  "linkEnableLabel": {
+    "message": "Enable"
+  },
+  "linkEnableCheckbox": {
+    "message": "Enable Link Selector"
+  },
+  "linkLaunchKeyLabel": {
+    "message": "Launch Key"
+  },
+  "linkOverlayLabel": {
+    "message": "Overlay"
+  },
+  "linkOverlaySubLabel": {
+    "message": "Adjust color and opacity together"
+  },
+  "linkColorLabel": {
+    "message": "Color"
+  },
+  "linkOpacityLabel": {
+    "message": "Opacity"
+  },
+  "linkBorderColorLabel": {
+    "message": "Unselected Border Color"
+  },
+  "linkBorderColorSubLabel": {
+    "message": "Border color in normal state"
+  },
+  "linkCheckedColorLabel": {
+    "message": "Selected Border Color"
+  },
+  "linkCheckedColorSubLabel": {
+    "message": "Border color after selection"
+  },
+  "linkCheckboxPositionLabel": {
+    "message": "Check Position"
+  },
+  "linkCheckboxPositionNote": {
+    "message": "Choose where the check mark is displayed"
+  },
+  "linkCheckboxTopRight": {
+    "message": "Top Right"
+  },
+  "linkCheckboxTopLeft": {
+    "message": "Top Left"
+  },
+  "linkCheckboxBottomRight": {
+    "message": "Bottom Right"
+  },
+  "linkCheckboxBottomLeft": {
+    "message": "Bottom Left"
+  },
+  "linkMinSizeLabel": {
+    "message": "Minimum Link Size"
+  },
+  "linkWidthLabel": {
+    "message": "Width (px)"
+  },
+  "linkHeightLabel": {
+    "message": "Height (px)"
+  },
+  "linkMinSizeNote1": {
+    "message": "Specify the minimum size of links to target."
+  },
+  "linkMinSizeNote2": {
+    "message": "* If set too small, buttons such as Like may also be included."
+  },
+  "sideTabLinkSelector": {
+    "message": "Link Selector"
+  },
+  "controlPanelTitle": {
+    "message": "Tab Control"
+  },
+  "controlPanelDesc": {
+    "message": "Configure tab behavior."
+  },
+  "controlEnable": {
+    "message": "Enable Tab Control"
+  },
+  "sideTabControl": {
+    "message": "Tab Control"
+  },
+  "sideTabAbout": {
+    "message": "About"
+  },
+  "aboutVersionLabel": {
+    "message": "Version:"
+  },
+  "aboutAuthorLabel": {
+    "message": "Author:"
+  },
+  "aboutThanksLabel": {
+    "message": "Thanks:"
+  },
+  "aboutBackupTitle": {
+    "message": "Settings Backup"
+  },
+  "aboutBackupNote1": {
+    "message": "Export and import the currently saved settings as text."
+  },
+  "aboutBackupNote2": {
+    "message": "This also includes PJ rules and saved sites."
+  },
+  "aboutBackupNote3": {
+    "message": "Importing will completely replace the current saved contents."
+  },
+  "aboutBackupExport": {
+    "message": "Export Current Settings"
+  },
+  "aboutBackupImport": {
+    "message": "Import This Content"
+  },
+  "sideTabSearch": {
+    "message": "Tab Search"
+  },
+  "sideTabSts": {
+    "message": "Search Box Focus"
+  },
+  "sideTabPageJump": {
+    "message": "Page Jump"
+  },
+  "commonNotSet": {
+    "message": "Not set"
+  },
+  "pjRuleListEmpty": {
+    "message": "No saved site rules yet."
+  },
+  "pjAnalysisShowingSavedRule": {
+    "message": "Showing saved rule"
+  },
+  "pjStatusRuleApplied": {
+    "message": "Applied the site settings to the edit form."
+  },
+  "pjStatusRuleRemoved": {
+    "message": "Removed the PJ rule from the list. Confirm with Save Settings."
+  },
+  "pjStatusRuleEnabledUpdated": {
+    "message": "Updated the enabled state. Confirm with Save Settings."
+  },
+  "pjRuleSitePrefix": {
+    "message": "Site"
+  },
+  "pjRuleUnsetSite": {
+    "message": "(site not set)"
+  },
+  "pjRuleUnsetHost": {
+    "message": "(host not set)"
+  },
+  "pjRuleEditButton": {
+    "message": "Edit"
+  },
+  "pjRuleRemoveButton": {
+    "message": "Clear"
+  },
+  "pjPatternUnsetPath": {
+    "message": "(path not set)"
+  },
+  "pjPatternUnsetOffset": {
+    "message": "(offset not set)"
+  },
+  "pjPatternUnsetQuery": {
+    "message": "(query not set)"
+  },
+  "stsSiteListEmpty": {
+    "message": "No site-specific settings yet."
+  },
+  "stsSitePrefix": {
+    "message": "Site"
+  },
+  "stsSiteOrderSuffix": {
+    "message": "th"
+  },
+  "stsSiteRemoveButton": {
+    "message": "Clear"
+  },
+  "stsSiteRemoveStatus": {
+    "message": "Removed the site-specific setting from the list. Confirm with Save Settings."
+  },
+  "pjValidateTabSearchAndKts": {
+    "message": "Tab Search key and KtS key cannot be the same."
+  },
+  "pjValidatePageJumpForwardAndTabSearch": {
+    "message": "Page Jump forward key and Tab Search key cannot be the same."
+  },
+  "pjValidatePageJumpForwardAndKts": {
+    "message": "Page Jump forward key and KtS key cannot be the same."
+  },
+  "pjValidatePageJumpBackAndTabSearch": {
+    "message": "Page Jump back key and Tab Search key cannot be the same."
+  },
+  "pjValidatePageJumpBackAndKts": {
+    "message": "Page Jump back key and KtS key cannot be the same."
+  },
+  "pjValidatePageJumpForwardAndBack": {
+    "message": "Page Jump forward key and back key cannot be the same."
+  },
+  "pjValidateGooglePageJumpForwardAndTabSearch": {
+    "message": "Google Page Jump forward key and Tab Search key cannot be the same."
+  },
+  "pjValidateGooglePageJumpForwardAndKts": {
+    "message": "Google Page Jump forward key and KtS key cannot be the same."
+  },
+  "pjValidateGooglePageJumpBackAndTabSearch": {
+    "message": "Google Page Jump back key and Tab Search key cannot be the same."
+  },
+  "pjValidateGooglePageJumpBackAndKts": {
+    "message": "Google Page Jump back key and KtS key cannot be the same."
+  },
+  "pjValidateGooglePageJumpForwardAndBack": {
+    "message": "Google Page Jump forward key and back key cannot be the same."
+  },
+  "backupExportSuccess": {
+    "message": "Exported current settings."
+  },
+  "backupExportFailed": {
+    "message": "Failed to export settings."
+  },
+  "backupImportEmpty": {
+    "message": "Please paste the text to import."
+  },
+  "backupImportInvalidJson": {
+    "message": "The JSON format is invalid."
+  },
+  "backupImportSuccess": {
+    "message": "Imported settings."
+  },
+  "backupImportFailed": {
+    "message": "Failed to import settings."
+  },
+  "pjModePath": {
+    "message": "Path"
+  },
+  "pjModeOffset": {
+    "message": "Offset"
+  },
+  "pjModeQuery": {
+    "message": "Query"
+  },
+  "keyNameCtrl": {
+    "message": "Ctrl"
+  },
+  "keyNameAlt": {
+    "message": "Alt"
+  },
+  "keyNameShift": {
+    "message": "Shift"
+  },
+  "keyNameSpace": {
+    "message": "Space"
+  },
+  "keyNameEscape": {
+    "message": "Escape"
+  },
+  "keyNameArrowLeft": {
+    "message": "ArrowLeft"
+  },
+  "keyNameArrowRight": {
+    "message": "ArrowRight"
+  },
+  "keyNamePageUp": {
+    "message": "PageUp"
+  },
+  "keyNamePageDown": {
+    "message": "PageDown"
+  },
+  "keyNameHome": {
+    "message": "Home"
+  },
+  "keyNameEnd": {
+    "message": "End"
+  },
+  "linkOpacityRangeText": {
+    "message": "0.00 - 1.00"
+  },
+  "optionsSideTabsAriaLabel": {
+    "message": "Settings sections"
+  },
+  "aboutCrestAlt": {
+    "message": "Tabmission crest"
+  },
+  "buttonSaveSettings": {
+    "message": "Save Settings"
+  },
+  "buttonReset": {
+    "message": "Reset"
+  },
+  "statusSaved": {
+    "message": "Saved"
+  },
+  "statusReset": {
+    "message": "Reset complete"
+  },
+  "tabHistorySectionTitle": {
+    "message": "Tab History"
+  },
+  "tabHistorySectionDesc": {
+    "message": "Move back and forward through the tabs you actually used."
+  },
+  "tabHistoryNote1": {
+    "message": "Back uses Alt+Q by default. Forward uses Alt+W by default."
+  },
+  "tabHistoryBackKeyLabel": {
+    "message": "Back"
+  },
+  "tabHistoryBackKeySubLabel": {
+    "message": "Activate the previously used tab"
+  },
+  "tabHistoryForwardKeyLabel": {
+    "message": "Forward"
+  },
+  "tabHistoryForwardKeySubLabel": {
+    "message": "Move forward after going back"
+  },
+  "tabHistoryValidateBackAndForward": {
+    "message": "Tab History back key and forward key cannot be the same."
+  },
+  "externalIntegrationTitle": {
+    "message": "Extension integration"
+  },
+  "externalIntegrationDesc": {
+    "message": "Information used when another extension, such as Munus Gesture, calls supported Tabmission features."
+  },
+  "externalIntegrationIdLabel": {
+    "message": "This Tabmission ID"
+  },
+  "externalIntegrationIdSubLabel": {
+    "message": "If Munus Gesture cannot connect, copy this ID and paste it there."
+  },
+  "buttonCopyExtensionId": {
+    "message": "Copy"
+  },
+  "statusCopiedExtensionId": {
+    "message": "Copied"
+  }
+}

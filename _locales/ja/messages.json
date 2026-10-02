@@ -1,0 +1,607 @@
+{
+  "extName": {
+    "message": "Tabmission"
+  },
+  "extDescription": {
+    "message": "ページジャンプ、検索欄フォーカス、タブ制御、タブ検索、リンク一括操作を統合。\nブラウジングの効率化と操作性向上を実現。"
+  },
+  "cmdSwitchPreviousTab": {
+    "message": "直前のタブに切り替え"
+  },
+  "optionsPageTitle": {
+    "message": "Tabmission 設定"
+  },
+  "optionsHeading": {
+    "message": "Tabmission 設定"
+  },
+  "optionsBadgeTabBehavior": {
+    "message": "タブ動作"
+  },
+  "labelNewTabPlacement": {
+    "message": "新しいタブを開く位置"
+  },
+  "labelCloseActivation": {
+    "message": "現在タブを閉じた後の移動先"
+  },
+  "labelNewTabOpenMode": {
+    "message": "新しいタブの開き方"
+  },
+  "optionChromeDefault": {
+    "message": "Chrome既定"
+  },
+  "optionFirst": {
+    "message": "先頭"
+  },
+  "optionLeftOfCurrentTab": {
+    "message": "現在タブの左"
+  },
+  "optionRightOfCurrentTab": {
+    "message": "現在タブの右"
+  },
+  "optionLast": {
+    "message": "最後尾"
+  },
+  "optionActivateLastUsedTab": {
+    "message": "直前に使ったタブへ移動"
+  },
+  "optionActivateLeftTab": {
+    "message": "左のタブへ移動"
+  },
+  "optionActivateRightTab": {
+    "message": "右のタブへ移動"
+  },
+  "optionForeground": {
+    "message": "前面"
+  },
+  "optionBackground": {
+    "message": "背面"
+  },
+  "pjSectionGeneral": {
+    "message": "一般サイト設定"
+  },
+  "pjAnalyzeButton": {
+    "message": "ページ解析"
+  },
+  "pjNoRules": {
+    "message": "保存済みサイトルールはまだありません。"
+  },
+  "pjEditingLabel": {
+    "message": "編集中：$NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "pjPanelTitle": {
+    "message": "ページジャンプ"
+  },
+  "pjPanelDesc": {
+    "message": "自動解析または手動設定で、次のページへ移動します。"
+  },
+  "pjEnable": {
+    "message": "ページジャンプを有効化"
+  },
+  "pjConflictNote": {
+    "message": "一部のキーは、Webサイト側のショートカットやブラウザ操作と競合する場合があります。"
+  },
+  "pjConflictNote2": {
+    "message": "その場合は別のキーに変更してください。"
+  },
+  "pjConflictNote3": {
+    "message": "文字入力欄操作中およびタブ検索表示中は動作しません。"
+  },
+  "pjGoogleOnly": {
+    "message": "Google専用"
+  },
+  "pjGoogleEnable": {
+    "message": "Google検索では専用ジャンプを使う"
+  },
+  "pjGooglePriority": {
+    "message": "他のルールより優先されます。"
+  },
+  "pjGoogleBackKey": {
+    "message": "Google戻るキー"
+  },
+  "pjGoogleForwardKey": {
+    "message": "Google進むキー"
+  },
+  "pjMouseBack": {
+    "message": "マウスの戻るボタンで前ページへ"
+  },
+  "pjMouseForward": {
+    "message": "マウスの進むボタンで次ページへ"
+  },
+  "pjModeLabel": {
+    "message": "設定モード"
+  },
+  "pjModeAuto": {
+    "message": "自動解析"
+  },
+  "pjModeManual": {
+    "message": "手動設定"
+  },
+  "pjAutoSectionLabel": {
+    "message": "ページ解析"
+  },
+  "pjUrl1": {
+    "message": "1ページ目URL"
+  },
+  "pjUrl2": {
+    "message": "2ページ目URL"
+  },
+  "pjUrl3": {
+    "message": "3ページ目URL"
+  },
+  "pjAnalyzeButton2": {
+    "message": "URL解析"
+  },
+  "pjManualName": {
+    "message": "設定名(登録名)"
+  },
+  "pjManualHost": {
+    "message": "対象サイト(host)"
+  },
+  "pjManualType": {
+    "message": "URLタイプ"
+  },
+  "pjManualPattern": {
+    "message": "パターン"
+  },
+  "pjManualStep": {
+    "message": "増分"
+  },
+  "pjSampleLabel": {
+    "message": "サンプル"
+  },
+  "pjSampleTitle": {
+    "message": "手動設定（完成例）"
+  },
+  "pjKeySectionLabel": {
+    "message": "キー設定"
+  },
+  "pjBackKey": {
+    "message": "前ページキー"
+  },
+  "pjForwardKey": {
+    "message": "次ページキー"
+  },
+  "pjSavedSites": {
+    "message": "設定済みサイト"
+  },
+  "commonClear": {
+    "message": "消去"
+  },
+  "pjSampleBody": {
+    "message": "Query型：Google → 対象：google.com / パターン：start={n} / 増分：10\nPath型：Gizmodo → 対象：gizmodo.jp / パターン：/articles/{n} / 増分：1\nOffset型：GIGAZINE → 対象：gigazine.net / パターン：/P{n}/ / 増分：20"
+  },
+  "searchPanelTitle": {
+    "message": "タブ検索"
+  },
+  "searchPanelDesc": {
+    "message": "タブ検索オーバーレイを表示。"
+  },
+  "searchEnableLabel": {
+    "message": "有効化"
+  },
+  "searchEnableCheckbox": {
+    "message": "タブ検索を有効にする"
+  },
+  "searchLauncherKeyLabel": {
+    "message": "起動キー"
+  },
+  "searchKeyNote1": {
+    "message": "※ Ctrl + Space、Alt + Space は使用不可。その他のSpaceの組み合わせは可能。"
+  },
+  "searchKeyNote2": {
+    "message": "※ 一部のキーは、Webサイト側のショートカットやブラウザ操作と競合する場合があります。"
+  },
+  "searchKeyNote3": {
+    "message": "その場合は別のキーに変更してください。"
+  },
+  "commonKeyPlaceholder": {
+    "message": "クリックしてキー押下"
+  },
+  "stsPanelTitle": {
+    "message": "検索欄フォーカス"
+  },
+  "stsPanelDesc": {
+    "message": "Webサイト内の検索ボックスにフォーカスし、そのまま文字入力可能。"
+  },
+  "stsEnable": {
+    "message": "検索欄フォーカスを有効化"
+  },
+  "stsFocusKeyLabel": {
+    "message": "フォーカスキー"
+  },
+  "stsFocusKeySubLabel": {
+    "message": "※ 全サイト共通"
+  },
+  "stsNote1": {
+    "message": "設定したキーを押すたびに、ページ内の検索欄候補を順送りで切り替えます。"
+  },
+  "stsNote2": {
+    "message": "うまく狙えないサイトは、「サイト別設定」で初回位置を調整してください。"
+  },
+  "stsNote3": {
+    "message": "一部のキーは、Webサイト側のショートカットやブラウザ操作と競合する場合があります。"
+  },
+  "stsNote4": {
+    "message": "その場合は別のキーに変更してください。"
+  },
+  "stsSiteSettingsLabel": {
+    "message": "サイト別設定"
+  },
+  "stsSiteOrderTitle": {
+    "message": "サイト別 初回フォーカス位置"
+  },
+  "stsSiteOrderNote1": {
+    "message": "URLをそのまま書かず、「https://」と「/以降」を除いたホスト名を記入。"
+  },
+  "stsSiteOrderExample": {
+    "message": "例："
+  },
+  "stsSiteOrderExampleLine1": {
+    "message": "https://search.yahoo.co.jp/realtime/ で 2番目のボックスにしたい場合"
+  },
+  "stsSiteOrderExampleLine2": {
+    "message": "↓"
+  },
+  "stsSiteOrderExampleLine3": {
+    "message": "search.yahoo.co.jp ・ 2"
+  },
+  "stsSiteNamePlaceholder": {
+    "message": "サイト名（任意）"
+  },
+  "stsSiteHostPlaceholder": {
+    "message": "search.yahoo.co.jp"
+  },
+  "stsSiteOrderPlaceholder": {
+    "message": "2"
+  },
+  "stsSiteAddButton": {
+    "message": "追加"
+  },
+  "stsSiteOrderHint": {
+    "message": "1 = 1番目のボックス、2 = 2番目、3 = 3番目"
+  },
+  "linkPanelTitle": {
+    "message": "リンク選択"
+  },
+  "linkPanelDesc": {
+    "message": "ページ上のリンクを選択して、バックグラウンドで一括オープン。"
+  },
+  "linkEnableLabel": {
+    "message": "有効化"
+  },
+  "linkEnableCheckbox": {
+    "message": "リンク選択を有効にする"
+  },
+  "linkLaunchKeyLabel": {
+    "message": "起動キー"
+  },
+  "linkOverlayLabel": {
+    "message": "オーバーレイ"
+  },
+  "linkOverlaySubLabel": {
+    "message": "色と透明度をまとめて調整"
+  },
+  "linkColorLabel": {
+    "message": "色"
+  },
+  "linkOpacityLabel": {
+    "message": "透明度"
+  },
+  "linkBorderColorLabel": {
+    "message": "未選択枠色"
+  },
+  "linkBorderColorSubLabel": {
+    "message": "通常時の枠線カラー"
+  },
+  "linkCheckedColorLabel": {
+    "message": "選択後枠色"
+  },
+  "linkCheckedColorSubLabel": {
+    "message": "選択済み時の枠線カラー"
+  },
+  "linkCheckboxPositionLabel": {
+    "message": "チェック位置"
+  },
+  "linkCheckboxPositionNote": {
+    "message": "チェックマークを表示する位置を選択します"
+  },
+  "linkCheckboxTopRight": {
+    "message": "右上"
+  },
+  "linkCheckboxTopLeft": {
+    "message": "左上"
+  },
+  "linkCheckboxBottomRight": {
+    "message": "右下"
+  },
+  "linkCheckboxBottomLeft": {
+    "message": "左下"
+  },
+  "linkMinSizeLabel": {
+    "message": "最小リンクサイズ"
+  },
+  "linkWidthLabel": {
+    "message": "幅 (px)"
+  },
+  "linkHeightLabel": {
+    "message": "高さ (px)"
+  },
+  "linkMinSizeNote1": {
+    "message": "ターゲットにするリンクの最小サイズを指定します。"
+  },
+  "linkMinSizeNote2": {
+    "message": "※小さくしすぎると「いいね」ボタンなども対象になります"
+  },
+  "sideTabLinkSelector": {
+    "message": "リンク選択"
+  },
+  "controlPanelTitle": {
+    "message": "タブ制御"
+  },
+  "controlPanelDesc": {
+    "message": "タブの振る舞いを設定。"
+  },
+  "controlEnable": {
+    "message": "タブ制御を有効化"
+  },
+  "sideTabControl": {
+    "message": "タブ制御"
+  },
+  "sideTabAbout": {
+    "message": "About"
+  },
+  "aboutVersionLabel": {
+    "message": "version："
+  },
+  "aboutAuthorLabel": {
+    "message": "Author："
+  },
+  "aboutThanksLabel": {
+    "message": "Thanks："
+  },
+  "aboutBackupTitle": {
+    "message": "設定バックアップ"
+  },
+  "aboutBackupNote1": {
+    "message": "現在保存されている設定をテキストとして出力・読込します。"
+  },
+  "aboutBackupNote2": {
+    "message": "PJルールと設定済みサイトも含みます。"
+  },
+  "aboutBackupNote3": {
+    "message": "読み込み時は現在の保存内容を全置換します。"
+  },
+  "aboutBackupExport": {
+    "message": "現在設定を出力"
+  },
+  "aboutBackupImport": {
+    "message": "この内容を読み込む"
+  },
+  "sideTabSearch": {
+    "message": "タブ検索"
+  },
+  "sideTabSts": {
+    "message": "検索欄フォーカス"
+  },
+  "sideTabPageJump": {
+    "message": "ページジャンプ"
+  },
+  "commonNotSet": {
+    "message": "未設定"
+  },
+  "pjRuleListEmpty": {
+    "message": "保存済みサイトルールはまだありません。"
+  },
+  "pjAnalysisShowingSavedRule": {
+    "message": "保存済みの rule を表示中"
+  },
+  "pjStatusRuleApplied": {
+    "message": "サイト設定を編集欄に反映しました。"
+  },
+  "pjStatusRuleRemoved": {
+    "message": "PJルールを一覧から外しました。Save Settingsで確定します。"
+  },
+  "pjStatusRuleEnabledUpdated": {
+    "message": "適用状態を更新しました。Save Settingsで確定します。"
+  },
+  "pjRuleSitePrefix": {
+    "message": "サイト"
+  },
+  "pjRuleUnsetSite": {
+    "message": "(site未設定)"
+  },
+  "pjRuleUnsetHost": {
+    "message": "(host未設定)"
+  },
+  "pjRuleEditButton": {
+    "message": "編集"
+  },
+  "pjRuleRemoveButton": {
+    "message": "消去"
+  },
+  "pjPatternUnsetPath": {
+    "message": "(path未設定)"
+  },
+  "pjPatternUnsetOffset": {
+    "message": "(offset未設定)"
+  },
+  "pjPatternUnsetQuery": {
+    "message": "(query未設定)"
+  },
+  "stsSiteListEmpty": {
+    "message": "サイト別設定はまだありません。"
+  },
+  "stsSitePrefix": {
+    "message": "サイト"
+  },
+  "stsSiteOrderSuffix": {
+    "message": "番目"
+  },
+  "stsSiteRemoveButton": {
+    "message": "消去"
+  },
+  "stsSiteRemoveStatus": {
+    "message": "サイト別設定を一覧から外しました。Save Settingsで確定します。"
+  },
+  "pjValidateTabSearchAndKts": {
+    "message": "Tab Search key と KtS key は同じにできません。"
+  },
+  "pjValidatePageJumpForwardAndTabSearch": {
+    "message": "Page Jump forward key と Tab Search key は同じにできません。"
+  },
+  "pjValidatePageJumpForwardAndKts": {
+    "message": "Page Jump forward key と KtS key は同じにできません。"
+  },
+  "pjValidatePageJumpBackAndTabSearch": {
+    "message": "Page Jump back key と Tab Search key は同じにできません。"
+  },
+  "pjValidatePageJumpBackAndKts": {
+    "message": "Page Jump back key と KtS key は同じにできません。"
+  },
+  "pjValidatePageJumpForwardAndBack": {
+    "message": "Page Jump forward key と back key は同じにできません。"
+  },
+  "pjValidateGooglePageJumpForwardAndTabSearch": {
+    "message": "Google Page Jump forward key と Tab Search key は同じにできません。"
+  },
+  "pjValidateGooglePageJumpForwardAndKts": {
+    "message": "Google Page Jump forward key と KtS key は同じにできません。"
+  },
+  "pjValidateGooglePageJumpBackAndTabSearch": {
+    "message": "Google Page Jump back key と Tab Search key は同じにできません。"
+  },
+  "pjValidateGooglePageJumpBackAndKts": {
+    "message": "Google Page Jump back key と KtS key は同じにできません。"
+  },
+  "pjValidateGooglePageJumpForwardAndBack": {
+    "message": "Google Page Jump forward key と back key は同じにできません。"
+  },
+  "backupExportSuccess": {
+    "message": "現在の保存設定を出力しました。"
+  },
+  "backupExportFailed": {
+    "message": "設定の出力に失敗しました。"
+  },
+  "backupImportEmpty": {
+    "message": "読み込むテキストを貼り付けてください。"
+  },
+  "backupImportInvalidJson": {
+    "message": "JSON形式が不正です。"
+  },
+  "backupImportSuccess": {
+    "message": "設定を読み込みました。"
+  },
+  "backupImportFailed": {
+    "message": "設定の読込に失敗しました。"
+  },
+  "pjModePath": {
+    "message": "Path"
+  },
+  "pjModeOffset": {
+    "message": "Offset"
+  },
+  "pjModeQuery": {
+    "message": "Query"
+  },
+  "keyNameCtrl": {
+    "message": "Ctrl"
+  },
+  "keyNameAlt": {
+    "message": "Alt"
+  },
+  "keyNameShift": {
+    "message": "Shift"
+  },
+  "keyNameSpace": {
+    "message": "Space"
+  },
+  "keyNameEscape": {
+    "message": "Escape"
+  },
+  "keyNameArrowLeft": {
+    "message": "ArrowLeft"
+  },
+  "keyNameArrowRight": {
+    "message": "ArrowRight"
+  },
+  "keyNamePageUp": {
+    "message": "PageUp"
+  },
+  "keyNamePageDown": {
+    "message": "PageDown"
+  },
+  "keyNameHome": {
+    "message": "Home"
+  },
+  "keyNameEnd": {
+    "message": "End"
+  },
+  "linkOpacityRangeText": {
+    "message": "0.00 - 1.00"
+  },
+  "optionsSideTabsAriaLabel": {
+    "message": "設定セクション"
+  },
+  "aboutCrestAlt": {
+    "message": "Tabmission crest"
+  },
+  "buttonSaveSettings": {
+    "message": "設定を保存"
+  },
+  "buttonReset": {
+    "message": "リセット"
+  },
+  "statusSaved": {
+    "message": "保存しました"
+  },
+  "statusReset": {
+    "message": "リセットしました"
+  },
+  "tabHistorySectionTitle": {
+    "message": "タブ履歴"
+  },
+  "tabHistorySectionDesc": {
+    "message": "実際にアクティブにしたタブ履歴を戻る・進む。"
+  },
+  "tabHistoryNote1": {
+    "message": "戻るは初期設定で Alt+Q、進むは Alt+W です。"
+  },
+  "tabHistoryBackKeyLabel": {
+    "message": "戻る"
+  },
+  "tabHistoryBackKeySubLabel": {
+    "message": "直前に使っていたタブをアクティブにします"
+  },
+  "tabHistoryForwardKeyLabel": {
+    "message": "進む"
+  },
+  "tabHistoryForwardKeySubLabel": {
+    "message": "戻った後に次のタブへ進みます"
+  },
+  "tabHistoryValidateBackAndForward": {
+    "message": "タブ履歴の戻るキーと進むキーは同じにできません。"
+  },
+  "externalIntegrationTitle": {
+    "message": "拡張連携"
+  },
+  "externalIntegrationDesc": {
+    "message": "Munus Gestureなど、他の拡張からTabmissionの対応機能を呼び出すための情報です。"
+  },
+  "externalIntegrationIdLabel": {
+    "message": "このTabmissionのID"
+  },
+  "externalIntegrationIdSubLabel": {
+    "message": "Munus Gesture側で接続できない場合、このIDをコピーして貼り付けます。"
+  },
+  "buttonCopyExtensionId": {
+    "message": "コピー"
+  },
+  "statusCopiedExtensionId": {
+    "message": "コピーしました"
+  }
+}

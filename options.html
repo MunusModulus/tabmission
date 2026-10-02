@@ -130,6 +130,74 @@
                   </select>
                 </div>
               </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label">
+                  <span data-i18n="tabHistorySectionTitle"></span>
+                  <div class="tbm_option_sub_label" data-i18n="tabHistorySectionDesc"></div>
+                </div>
+                <div class="tbm_option_control">
+                  <div class="tbm_note"><span data-i18n="tabHistoryNote1"></span></div>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label">
+                  <span data-i18n="tabHistoryBackKeyLabel"></span>
+                  <div class="tbm_option_sub_label" data-i18n="tabHistoryBackKeySubLabel"></div>
+                </div>
+                <div class="tbm_option_control">
+                  <div class="tbm_modifier_group">
+                    <button id="tbm_tab_history_back_ctrl" type="button" class="tbm_modifier_button"><span data-i18n="keyNameCtrl"></span></button>
+                    <button id="tbm_tab_history_back_alt" type="button" class="tbm_modifier_button"><span data-i18n="keyNameAlt"></span></button>
+                    <button id="tbm_tab_history_back_shift" type="button" class="tbm_modifier_button"><span data-i18n="keyNameShift"></span></button>
+                  </div>
+                  <div class="tbm_launcher_key_row">
+                    <input
+                      id="tbm_tab_history_back_key"
+                      type="text"
+                      maxlength="12"
+                      data-i18n-placeholder="commonKeyPlaceholder"
+                      placeholder="クリックしてキー押下"
+                      autocomplete="off"
+                      spellcheck="false"
+                      inputmode="none"
+                      readonly
+                    >
+                    <button id="tbm_tab_history_back_clear" type="button" class="tbm_secondary_button tbm_key_clear_button"><span data-i18n="commonClear"></span></button>
+                    <span id="tbm_tab_history_back_preview" class="tbm_launcher_preview"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tbm_option_row">
+                <div class="tbm_option_label">
+                  <span data-i18n="tabHistoryForwardKeyLabel"></span>
+                  <div class="tbm_option_sub_label" data-i18n="tabHistoryForwardKeySubLabel"></div>
+                </div>
+                <div class="tbm_option_control">
+                  <div class="tbm_modifier_group">
+                    <button id="tbm_tab_history_forward_ctrl" type="button" class="tbm_modifier_button"><span data-i18n="keyNameCtrl"></span></button>
+                    <button id="tbm_tab_history_forward_alt" type="button" class="tbm_modifier_button"><span data-i18n="keyNameAlt"></span></button>
+                    <button id="tbm_tab_history_forward_shift" type="button" class="tbm_modifier_button"><span data-i18n="keyNameShift"></span></button>
+                  </div>
+                  <div class="tbm_launcher_key_row">
+                    <input
+                      id="tbm_tab_history_forward_key"
+                      type="text"
+                      maxlength="12"
+                      data-i18n-placeholder="commonKeyPlaceholder"
+                      placeholder="クリックしてキー押下"
+                      autocomplete="off"
+                      spellcheck="false"
+                      inputmode="none"
+                      readonly
+                    >
+                    <button id="tbm_tab_history_forward_clear" type="button" class="tbm_secondary_button tbm_key_clear_button"><span data-i18n="commonClear"></span></button>
+                    <span id="tbm_tab_history_forward_preview" class="tbm_launcher_preview"></span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -187,6 +255,7 @@
                       inputmode="none"
                       readonly
                     >
+                    <button id="tbm_launcher_clear" type="button" class="tbm_secondary_button tbm_key_clear_button"><span data-i18n="commonClear"></span></button>
                     <span id="tbm_launcher_preview" class="tbm_launcher_preview"></span>
                   </div>
 
@@ -255,6 +324,7 @@
                       inputmode="none"
                       readonly
                     >
+                    <button id="tbm_link_batch_clear" type="button" class="tbm_secondary_button tbm_key_clear_button"><span data-i18n="commonClear"></span></button>
                     <span id="tbm_link_batch_preview" class="tbm_launcher_preview"></span>
                   </div>
                 </div>
@@ -473,6 +543,7 @@
                       inputmode="none"
                       readonly
                     >
+                    <button id="tbm_sts_clear" type="button" class="tbm_secondary_button tbm_key_clear_button"><span data-i18n="commonClear"></span></button>
                     <span id="tbm_sts_preview" class="tbm_launcher_preview"></span>
                   </div>
 
@@ -915,6 +986,40 @@
                     alt="Tabmission crest"
                     src="crest.jpg"
                   >
+                </div>
+              </div>
+
+              <div class="tbm_about_backup_block">
+                <h3 class="tbm_about_backup_title"><span data-i18n="externalIntegrationTitle"></span></h3>
+
+                <div class="tbm_note">
+                  <span data-i18n="externalIntegrationDesc"></span>
+                </div>
+
+                <div class="tbm_option_row">
+                  <div class="tbm_option_label">
+                    <span data-i18n="externalIntegrationIdLabel"></span>
+                    <div class="tbm_option_sub_label"><span data-i18n="externalIntegrationIdSubLabel"></span></div>
+                  </div>
+                  <div class="tbm_option_control">
+                    <div class="tbm_inline_action_row">
+                      <input
+                        id="tbm_extension_id"
+                        type="text"
+                        spellcheck="false"
+                        autocomplete="off"
+                        readonly
+                      >
+                      <button
+                        id="tbm_copy_extension_id"
+                        type="button"
+                        class="tbm_secondary_button"
+                      >
+                        <span data-i18n="buttonCopyExtensionId"></span>
+                      </button>
+                    </div>
+                    <div id="tbm_extension_id_copy_status" class="tbm_note"></div>
+                  </div>
                 </div>
               </div>
 
